@@ -1,0 +1,33 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:defaultValue="8458813251"
+            android:key="@string/key_gallery_name"
+            android:title="Current Mobile No"
+            android:summary="8452514589"/>
+        <EditTextPreference
+            android:defaultValue="s_singh@twtech.in"
+            android:key="@string/key_gallery_name"
+            android:title="Email Id"
+            android:summary="abc@twtech.in" />
+        <EditTextPreference
+            android:key="AddTocompany"
+            android:title="Add me to Company" />
+
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="@string/title_upload_quality"
+            android:entries="@array/pref_upload_quality_entries"
+            android:entryValues="@array/pref_upload_quality_values"
+            android:key="@string/key_upload_quality"
+            android:title="Send Data" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/notifications_new_message"
+            android:title="Send Report" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

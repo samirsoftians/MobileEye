@@ -1,0 +1,555 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:id="@+id/root_content"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="@color/end"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        <View
+            android:layout_marginTop="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"/>
+
+        <LinearLayout
+            android:id="@+id/linearDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/fromdateId"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:hint="From Date"
+                android:textColorHint="@color/end"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15dp"
+                android:textColor="@color/end"
+                android:drawableLeft="@drawable/calendar"
+                android:gravity="center" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:id="@+id/toDateId"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:hint="To Date"
+                android:textColorHint="@color/end"
+                android:textColor="@color/end" />
+
+            <Button
+                android:id="@+id/myDrivingSubmitbtn"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/sp_background"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/end"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="-5sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"/>
+        <!--
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp">
+                        <Button
+                            android:textStyle="bold"
+                            android:id="@+id/submit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_bg"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/DimGray"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/mystattxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginRight="5dp"
+                android:text="My Statistics"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/end"/>
+
+            <View
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/mystattxt"
+                android:background="#e0e0e0"
+                />
+
+            <View
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mystattxt"
+                android:background="#e0e0e0"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".45"/>
+
+            <TextView
+                android:id="@+id/kmtxt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_weight=".55"
+                android:gravity="start"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="true"
+                android:text="Km"
+                android:textColor="#000"
+                android:textSize="16.5sp" />
+
+            <TextView
+                android:id="@+id/hrtxt"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight=".5"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="Hr"
+                android:textColor="#000"
+                android:textSize="16.5sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ntdrivingtxt"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".45"
+                    android:text="Night Driving      "
+                    android:singleLine="true"
+                    android:textColor="@color/end"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/ndkmtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.55"
+                    android:hint="km"
+                    android:textColorHint="@color/end"
+                    android:textColor="@color/end"
+                    android:singleLine="true"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAlignment="textStart"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/ndhrtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight=".5"
+                    android:hint="hr"
+                    android:singleLine="true"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="@color/end"
+                    android:textColorHint="@color/end"
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight=".45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Fatigued Driving"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/end"/>
+
+                <TextView
+                    android:id="@+id/ftkmtxt"
+                    android:singleLine="true"
+                    android:layout_weight=".55"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/end"
+                    android:gravity="start"
+                    android:textStyle="normal"
+                    android:hint="km"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/end"
+                    android:layout_marginLeft="15dp"
+                    android:maxLength="3"/>
+                <TextView
+                    android:id="@+id/fthrtxt"
+                    android:singleLine="true"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/end"
+                    android:textColorHint="@color/end"
+                    android:layout_height="30dp"
+                    android:hint="hr"
+                    android:gravity="start" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".45"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:text="Total Driving      "
+                    android:singleLine="true"
+                    android:textColor="@color/end" />
+
+                <TextView
+                    android:id="@+id/totalDrivingkm"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.55"
+                    android:hint="km"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/end"
+                    android:textColor="@color/end"
+                    android:layout_marginLeft="15dp"
+                    android:textAlignment="textStart"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/totalDrivinghr"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:layout_weight=".5"
+                    android:hint="hr"
+                    android:textColorHint="@color/end"
+                    android:singleLine="true"
+                    android:textColor="@color/end"
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/mybehavetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="My Behaviour"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textSize="20sp"
+                android:textColor="@color/end"/>
+
+            <View
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/mybehavetxt"
+                android:background="#e0e0e0"
+                />
+
+            <View
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mybehavetxt"
+                android:background="#e0e0e0"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".65"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight=".35"
+                    android:text="Count"
+                    android:textColor="@color/end"
+                    android:singleLine="true"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16.5dp"
+                    android:gravity="start" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:text="Braking"
+                    android:layout_gravity="center"
+                    android:textColor="@color/end" />
+
+                <TextView
+                    android:id="@+id/brkcttxt"
+                    android:singleLine="true"
+                    android:layout_weight=".4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/end"
+                    android:gravity="start" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Acceleration"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/end" />
+
+                <TextView
+                    android:id="@+id/acccttxt"
+                    android:singleLine="true"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:layout_weight=".4"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="@color/end"
+                    android:gravity="start" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight=".6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Speeding"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="@color/end"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/spdtxt"
+                    android:singleLine="true"
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/end"
+                    android:layout_height="30dp"
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

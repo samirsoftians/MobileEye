@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fitsSystemWindows="false"
+            android:background="#eceff1">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/mobileeyelogo"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:id="@+id/action"
+                />
+
+            <TextView
+                android:id="@+id/action_bar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="MOBILE EYE"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:textSize="26dp"
+                android:fontFamily="Arial"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/share1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/leader_share"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:weightSum="1.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/cv_row_first"
+                    android:layout_marginTop="10dp"
+                    fab:cardElevation="0dp"
+                    app:cardBackgroundColor="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/today"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/black"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight=".5"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/calendar1"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:id="@+id/img_date"
+                            />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5">
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/cv_row_second"
+                    android:layout_marginTop="10dp"
+                    fab:cardElevation="0dp"
+                    app:cardBackgroundColor="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/weekly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weekly"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/end"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight=".5"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/event1"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:id="@+id/img_week"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5">
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/cv_row_third"
+                    android:layout_marginTop="10dp"
+                    fab:cardElevation="0dp"
+                    app:cardBackgroundColor="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:weightSum="1">
+                        <TextView
+                            android:id="@+id/podium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Podium"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/end"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_weight=".5"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@drawable/cup"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:id="@+id/img_podium"
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.twtech.fleetviewapp.Today"
+                android:id="@+id/output"/>
+
+
+
+
+        </ScrollView>
+
+        <!--  <include layout="@layout/fragment_today"/>-->
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

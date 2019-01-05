@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="0dp"
+    android:id="@+id/scroll"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Mobile No"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ed_mobno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Id"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/ed_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/end"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"
+            android:maxLength="30"/>
+
+
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit Id"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ed_unitid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Code"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/ed_vehcode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/end"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"
+            android:maxLength="30"/>
+
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_fvurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCredits"
+            android:autoLink="web"
+            android:layout_centerInParent="true"
+            android:linksClickable="true"
+            android:textColor="@color/LightBlue"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_margin="10dp"/>
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fleetview UserId"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/ed_fv_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/end"
+            android:layout_marginLeft="10dp"
+            android:text="s_singh@twtech.in"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"
+            android:maxLength="30"/>
+
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fleetview Password"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15dp"/>
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:layout_marginLeft="10dp"/>
+
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Company Code"
+            android:textColorHint="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/end"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/ed_CompanyCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/end"
+            android:text="No Company Code"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"
+            android:maxLength="30"/>
+        <View
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="#e0e0e0"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkbox2"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Company Code"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/Gold"
+    >
+
+
+    <ImageView
+
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/mobileeyelogo"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/action"
+        />
+
+    <TextView
+        android:id="@+id/action_bar_back"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginBottom="22dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="MOBILE EYE"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:fontFamily="Arial"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screen_sare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LeaderBoard"
+        android:textSize="25dp"
+        android:textColor="@color/Black"
+        android:textAlignment="textEnd"
+        android:layout_gravity="center_vertical"
+         android:gravity="center"
+        tools:ignore="RtlCompat"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/leader_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="23dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        tools:ignore="RtlCompat"
+        android:textStyle="normal" />
+
+
+</LinearLayout>
+
+
+</LinearLayout>

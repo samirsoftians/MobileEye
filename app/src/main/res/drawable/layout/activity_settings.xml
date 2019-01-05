@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:id="@+id/scroll"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_input_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/end"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="General"
+            android:textSize="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Current Mobile No"
+                android:textColorHint="@color/end"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/end"
+                android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/ed_mobno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColorHint="@color/end"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/end"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"/>
+
+
+            <View
+                android:layout_marginTop="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="#e0e0e0"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:textColorHint="@color/end"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/end"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColorHint="@color/end"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/end"
+                android:inputType="textPersonName"
+                android:maxLength="30"/>
+
+
+            <View
+                android:layout_marginTop="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="#e0e0e0"/>
+
+            <View
+                android:layout_marginTop="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="#e0e0e0"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/ed_addCompany"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Add Me To Company"
+                    android:textColor="@color/end"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLength="30"
+                    android:textSize="15dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:layout_marginTop="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="#e0e0e0"/>
+
+            <TextView
+                android:id="@+id/tv_sendData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Data"
+                android:textColor="@color/end"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_marginTop="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="#e0e0e0"/>
+            <TextView
+                android:id="@+id/tv_sendReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Report"
+                android:textColor="@color/end"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
